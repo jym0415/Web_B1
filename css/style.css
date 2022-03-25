@@ -1,0 +1,94 @@
+*{margin: 0; padding: 0;}
+li,ul{list-style: none;}
+a{text-decoration: none; color: #333; font-family: "맑은고딕",sans-serif;}
+
+/*공통*/
+.container{width: 1200px;}
+.m-auto{margin: 0 auto;}
+.d-none{display: none;}
+.d-flex{display: flex;}
+.d-block{display: block;}
+.abs{position: absolute;}
+.rel{position: relative;}
+.justify-between{justify-content: space-between;}
+.align-center{align-items: center;}
+.h100{height: 100px;}
+.h300{height: 300px;}
+.h200{height: 200px;}
+.ofh{overflow: hidden;}
+
+/*header*/
+#hd{background-color: rgb(41, 58, 73);}
+#gnb{background-color: #fff;}
+.d1a{
+    line-height: 2;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    min-width: 120px;
+}
+.d2ul{
+    height: 0;
+    overflow: hidden;
+    left: 0; right: 0;
+    top: 100%;
+    background-color: #fff;
+    transition: height 0.5s;
+    text-align: center;
+    z-index: 99;
+  
+}
+.d2ul a{
+    font-size: 18px;
+    line-height: 2;
+    text-align: center;
+}
+
+#gnb:hover .d2ul{
+    height: 150px;
+}
+.d1li:hover .d1a{color: #fff;}
+.d1li:hover {background-color: rgb(9, 9, 80);}
+.d2ul li:hover a{color: #fff;}
+.d2ul li:hover {background-color: rgb(9, 9, 80);}
+
+/*slider*/
+
+#slider ul{
+    width: 10000000px;
+}
+
+/*content*/
+#content > div {width: 33.333%;}
+.tab h3{line-height: 3; 
+    padding: 0 10px;
+    cursor: pointer;
+}
+.tab h3:hover {background-color: rgb(181, 222, 236);}
+.notice li{
+    display: flex;
+    line-height: 2;
+    white-space: nowrap;
+    justify-content: space-between;
+    font-size: 16px;
+}
+.notice li a{
+    width: 250px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.gallery img {width: 90%;}
+
+.tab ul{left: 0; padding: 0 10px; display: none; }
+.dis-fc{flex-direction: column;}
+.tab >div.on ul{display: flex;}
+
+/*ft*/
+#ft {background-color: rgb(206, 201, 201,0.8);}
+.ftlogo{width: 30%;}
+.ftright{width: 70%; line-height: 3;}
+.copy p{ text-align: center;}
+
+/*popup*/
